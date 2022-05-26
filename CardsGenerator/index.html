@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>cards gerate</title>
+    </head>
+    <script src="./js/script.js"></script>
+    <body>
+        
+        <main>
+            
+
+            <!--method: envia as infos sem colocar os dados na URL-->
+             <!--action: URL de destino dos dados-->
+            <form method="get" id="form">
+
+              <p class="title">Gerador de cards de produtos</p>
+
+              <label>Nome do produto:
+                 <input  class="inputtexts" type="text" size="25"  id="names">
+              </label>
+         
+             <label>link da Imagem: 
+                  <input class="inputtexts" type="url"  id="link">
+             </label>
+
+             <label>valor em R$: 
+                <input  class="inputtexts" type="number"  step="0.01" min="0" id="cost">
+             </label>
+
+             <label>Descrição:</label>
+                <textarea rows="5" cols="20" maxlength="100" wrap="physical" name="comments" id="description"> </textarea>
+            
+                <input  class="button" type="reset"value="Apagar">
+                <button  type="button" class= "button" id ="clicked">Gerar</button>
+            </form>
+
+        </main>
+
+        <section>
+            <!--code here JS-->
+        </section>
+
+        
+    </body>
+
+</html>
